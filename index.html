@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - 原生版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <header>
+            <h1>Todo App</h1>
+        </header>
+
+        <section class="input-card">
+            <input type="text" id="todo-name" placeholder="請輸入代辦事項名稱...">
+            <textarea id="todo-detail" placeholder="請輸入詳細陳述內容..." rows="3"></textarea>
+            <button id="add-btn">建立代辦事項檔案</button>
+        </section>
+
+        <main id="file-shelf" class="file-shelf">
+            </main>
+    </div>
+
+    <div id="file-reader" class="modal">
+        <div class="modal-content">
+            <span class="close-icon">&times;</span>
+            <h2 id="view-title"></h2>
+            <hr>
+            <p id="view-body"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
